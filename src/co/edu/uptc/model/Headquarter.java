@@ -1,14 +1,16 @@
 package co.edu.uptc.model;
 
+import java.util.ArrayList;
+
 public class Headquarter {
 
     private String name;
-    private String[] campus;
+    private ArrayList<String> campus;
 
     public Headquarter() {
     }
 
-    public Headquarter(String name, String[] campus) {
+    public Headquarter(String name, ArrayList<String> campus) {
         this.name = name;
         this.campus = campus;
     }
@@ -21,11 +23,11 @@ public class Headquarter {
         this.name = name;
     }
 
-    public String[] getCampus() {
+    public ArrayList<String> getCampus() {
         return campus;
     }
 
-    public void setCampus(String[] campus) {
+    public void setCampus(ArrayList<String> campus) {
         this.campus = campus;
     }
 }

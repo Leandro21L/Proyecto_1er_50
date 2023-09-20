@@ -1,5 +1,7 @@
 package co.edu.uptc.model;
 
+import java.util.ArrayList;
+
 public class Book {
 
     private String title;
@@ -7,12 +9,12 @@ public class Book {
     private int volume;
     private String editorial;
     private Author author;
-    private Headquarter headquarter;
+    private ArrayList<Headquarter> headquarter;
 
     public Book() {
     }
 
-    public Book(String title, String ISBNCode, int volume, String editorial, Author author, Headquarter headquarter) {
+    public Book(String title, String ISBNCode, int volume, String editorial, Author author, ArrayList<Headquarter> headquarter) {
         this.title = title;
         this.ISBNCode = ISBNCode;
         this.volume = volume;
@@ -61,11 +63,11 @@ public class Book {
         this.author = author;
     }
 
-    public Headquarter getHeadquarter() {
+    public ArrayList<Headquarter> getHeadquarter() {
         return headquarter;
     }
 
-    public void setHeadquarter(Headquarter headquarter) {
+    public void setHeadquarter(ArrayList<Headquarter> headquarter) {
         this.headquarter = headquarter;
     }
 }
